@@ -1,0 +1,116 @@
+.home {
+  width: 90vw;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 40px 0px 40px 0px;
+  max-width: 1240px;
+}
+.home > .right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.right > img {
+  width: 300px;
+}
+.right > button {
+  border: 0;
+  cursor: pointer;
+  font-family: "HelveticaBold";
+  border-radius: 10px;
+  display: none;
+  width: 100%;
+  font-size: 18px;
+  height: 45px;
+  color: white;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+}
+.home > .left {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.left > h1 {
+  font-family: "HelveticaBold";
+  color: #240d57;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: right;
+}
+.left > p {
+  margin-top: 10px;
+  font-family: "Helvetica";
+  max-width: 500px;
+  color: #4f4f4f;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+}
+.left > h1 > span {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.left > button {
+  border: 0;
+  margin-top: 40px;
+  font-family: "HelveticaBold";
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  font-size: 18px;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+}
+
+@media screen and (max-width: 960px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+  .right > img {
+    width: 250px;
+  }
+  .home > .left {
+    align-items: center;
+  }
+  .left > h1 {
+    text-align: center;
+  }
+  .left > p {
+    text-align: center;
+  }
+  .left > button {
+    display: none;
+  }
+  .right > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .left > h1 {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .left > p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .right > img {
+    width: 200px;
+  }
+  .right > button {
+    font-size: 14px;
+    height: 40px;
+  }
+}

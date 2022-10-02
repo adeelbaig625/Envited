@@ -1,0 +1,128 @@
+.event {
+  width: 100vw;
+
+  background: #fff;
+}
+.event-wrapper {
+  width: 90%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin: auto;
+  padding: 40px 0px 40px 0px;
+  max-width: 1240px;
+}
+
+.event-wrapper > .left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
+.event-wrapper > .right > img {
+  width: 400px;
+}
+
+.event-wrapper > .right {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.event-wrapper > .left > h1 {
+  font-family: "HelveticaBold";
+  color: #240d57;
+  font-size: 44px;
+
+  text-align: left;
+}
+.event-wrapper > .left > p {
+  font-family: "Helvetica";
+  color: #828282;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
+.event-wrapper > .left > p > span {
+  font-family: "HelveticaBold";
+}
+.card {
+  display: flex;
+  width: 350px;
+  margin: 20px 0px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card > .icon {
+  width: 60px;
+}
+.event-text-1 {
+  font-family: "HelveticaBold";
+  color: #240d57;
+  font-size: 16px;
+}
+.event-text {
+  width: 250px;
+}
+.event-text-2 {
+  font-family: "Helvetica";
+  color: #4f4f4f;
+  font-size: 16px;
+}
+.card > .arrow {
+  width: 10px;
+}
+@media screen and (max-width: 960px) {
+  .event-wrapper {
+    flex-direction: column-reverse;
+  }
+  .event-wrapper > .right > img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .event-wrapper {
+    flex-direction: column-reverse;
+    width: 100vw;
+
+    padding: 0;
+  }
+  .event-wrapper > .right {
+    align-items: center;
+    flex: none;
+    justify-content: flex-start;
+  }
+
+  .event-wrapper > .right > img {
+    width: 100%;
+  }
+  .event-wrapper > .left > h1 {
+    margin-top: 10px;
+    font-size: 36px;
+  }
+  .event-wrapper > .left > p {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 280px;
+  }
+  .card > .icon {
+    width: 40px;
+  }
+  .event-text-1 {
+    font-size: 14px;
+  }
+  .event-text {
+    width: 200px;
+  }
+  .event-text-2 {
+    font-size: 14px;
+  }
+  .card > .arrow {
+    width: 10px;
+  }
+}

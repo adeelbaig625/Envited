@@ -1,0 +1,142 @@
+.createEvent {
+  width: 90vw;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  max-width: 1240px;
+}
+
+.createEvent > .right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.createEvent > .right > img {
+  width: 300px;
+}
+
+.createEvent > .left > h1 {
+  font-family: "HelveticaBold";
+  color: #240d57;
+  font-size: 50px;
+}
+.createEvent > .left > form {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.createEvent > .left > form > input {
+  width: 360px;
+  border: 0;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #240d57;
+  background: #f6f2ff;
+  padding: 10px 10px 8px 10px;
+  border-radius: 8px;
+  margin: 5px 0 5px 0;
+}
+.dateinput-div {
+  display: flex;
+  width: 360px;
+  justify-content: space-between;
+  align-items: center;
+}
+.dateinput-div > input {
+  width: 48%;
+  border: 0;
+  font-family: "Helvetica";
+  color: #240d57;
+  font-size: 16px;
+  background: #f6f2ff;
+  padding: 10px 10px 8px 10px;
+  border-radius: 8px;
+  margin: 5px 0 5px 0;
+}
+.createEvent > .left > form > button {
+  border: 0;
+  margin-top: 20px;
+  font-family: "HelveticaBold";
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  font-size: 18px;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+}
+.fileupload-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 360px;
+  font-family: "Helvetica";
+  color: #240d57;
+  background: #f6f2ff;
+  padding: 8px 10px 8px 10px;
+  border-radius: 8px;
+  margin: 5px 0 5px 0;
+}
+.fileupload-div > p {
+  font-family: "Helvetica";
+  color: #240d57;
+  background: #f6f2ff;
+  font-size: 16px;
+}
+.fileupload-div > img {
+  background: #f6f2ff;
+  width: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .createEvent {
+    flex-direction: column;
+  }
+  .createEvent > .right {
+    display: none;
+  }
+  .createEvent > .right > img {
+    display: none;
+  }
+  .createEvent > .left > h1 {
+    font-size: 40px;
+  }
+  .createEvent > .left > form {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .createEvent > h1 {
+    font-size: 30px;
+  }
+  .left > form > input {
+    width: 280px;
+
+    font-size: 14px;
+  }
+  .dateinput-div {
+    width: 280px;
+  }
+  .dateinput-div > input {
+    font-size: 14px;
+  }
+  .left > form > button {
+    width: 250px;
+
+    background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  }
+  .fileupload-div {
+    width: 280px;
+  }
+  .fileupload-div > p {
+    font-size: 14px;
+  }
+}

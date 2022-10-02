@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import "./assets/fonts/Helvetica-Bold.ttf";
+import "./assets/fonts/helvetica-light.ttf";
+import "./assets/fonts/Helvetica.ttf";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
+    <ScrollToTop />
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
